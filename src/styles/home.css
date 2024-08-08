@@ -1,0 +1,22 @@
+:root {
+  --bg-color-topright: #f4e4c9;
+  --bg-color-bottomleft: #a5ebeb;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  max-width: var(--max-width);
+
+  background: radial-gradient(
+      circle at 10% 90%,
+      var(--bg-color-bottomleft) 0%,
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 90% 10%,
+      var(--bg-color-topright) 0%,
+      transparent 35%
+    );
+
+  @apply w-screen min-w-[1280px] !mx-auto min-h-screen;
+}
