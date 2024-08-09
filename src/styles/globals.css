@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import '@radix-ui/themes/styles.css';
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -29,6 +31,8 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
+    --bg-color-topright: #f4e4c9;
+    --bg-color-bottomleft: #a5ebeb;
   }
 
   .dark {
@@ -66,4 +70,21 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+body {
+  /*
+  background: linear-gradient(
+    143.6deg,
+    rgba(192, 132, 252, 0) 20.79%,
+    rgba(232, 121, 249, 0.26) 40.92%,
+    rgba(204, 171, 238, 0) 70.35%
+  ) no-repeat;
+  */
+
+  background: radial-gradient(circle at 10% 90%, var(--bg-color-bottomleft) 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, var(--bg-color-topright) 0%, transparent 35%);
+  background-repeat: no-repeat;
+
+  @apply min-h-screen;
 }
