@@ -1,0 +1,38 @@
+@import './variables.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply box-border;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  perspective: 1024px;
+  @apply overflow-hidden flex flex-col justify-center h-screen w-screen m-0;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+#app {
+  transform: translate3d(0, 0, -12rem);
+  @apply w-[var(--app-width)] h-[var(--app-height)] flex flex-row items-stretch justify-center;
+}
+
+.bg {
+  -o-object-fit: cover;
+  -o-object-position: center center;
+  @apply fixed object-cover object-center w-[110vw] h-[110vh] blur-[2px] brightness-90 z-[-1] top-[-5%] left-[-5%] overflow-hidden;
+}
+
+.icons {
+  @apply flex flex-col justify-center items-stretch relative w-[var(--app-width)];
+}

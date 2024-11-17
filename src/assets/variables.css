@@ -1,0 +1,24 @@
+:root {
+  --app-width: min(80vw, var(--app-max-width));
+  --app-height: min(60vh, var(--app-max-height));
+  --app-max-width: 80vw;
+  --app-max-height: 60vh;
+  --icon-col-width: calc(var(--app-width) / 10);
+  --icon-row-height: calc(var(--app-height) / 3);
+  --icon-gap-x: 0.5rem;
+  --icon-gap-y: 3rem;
+}
+
+@media (min-width: 320px) {
+  :root {
+    --app-max-width: 800px;
+    --app-max-height: 480px;
+  }
+}
+
+@media (min-width: 1440px) {
+  :root {
+    --app-max-width: 1280px;
+    --app-max-height: 600px;
+  }
+}
