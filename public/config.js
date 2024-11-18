@@ -32,7 +32,7 @@ window.config = {
       outerUrl: '',
     },
     {
-      icon: './icons/portainer.png',
+      icon: './icons/docker.svg',
       name: 'Portainer',
       innerUrl: 'http://10.0.0.10:9000/',
       outerUrl: '',
