@@ -1,0 +1,21 @@
+@import './base.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply w-screen h-screen;
+}
+
+.bg-img {
+  background-image: url('./bg.jpg');
+  -o-object-fit: cover;
+  -o-object-position: center center;
+
+  @apply fixed object-cover object-center w-[110vw] h-[110vh] blur-[3px] brightness-90 z-[-1] top-[-5%] left-[-5%] overflow-hidden;
+}
+
+#app {
+  @apply w-screen h-screen !min-h-[var(--app-min-height)] m-0 p-0 flex justify-center items-center object-cover object-center z-[-1] overflow-hidden;
+}
