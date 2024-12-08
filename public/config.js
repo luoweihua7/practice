@@ -1,19 +1,19 @@
 window.config = {
   menus: [
     {
-      icon: './icons/mikrotik.svg',
+      icon: './png/mikrotik.png',
       name: 'Mikrotik',
       innerUrl: 'http://10.0.0.1/',
       outerUrl: '',
     },
     {
-      icon: './icons/openwrt.svg',
+      icon: './png/router.png',
       name: 'OpenWrt',
       innerUrl: 'http://10.0.0.2/',
       outerUrl: '',
     },
     {
-      icon: './icons/proxmox.svg',
+      icon: './png/proxmox.png',
       name: 'Proxmox VE',
       innerUrl: 'https://10.0.0.20:8006/',
       outerUrl: '',
@@ -25,13 +25,13 @@ window.config = {
       outerUrl: '',
     },
     {
-      icon: './icons/QuMagic.png',
+      icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Apple_Music_icon.svg/240px-Apple_Music_icon.svg.png',
       name: 'QuMagic',
       innerUrl: 'http://10.0.0.10:5000/qumagie/',
       outerUrl: '',
     },
     {
-      icon: './icons/docker.svg',
+      icon: './png/docker.png',
       name: 'Portainer',
       innerUrl: 'http://10.0.0.10:9000/',
       outerUrl: '',
@@ -43,13 +43,13 @@ window.config = {
       outerUrl: '',
     },
     {
-      icon: './icons/emby.svg',
+      icon: './png/emby.png',
       name: 'Emby',
       innerUrl: 'http://10.0.0.10:8096',
       outerUrl: '',
     },
     {
-      icon: './icons/home-assistant.svg',
+      icon: './png/ha.png',
       name: 'HomeAssistant',
       innerUrl: 'http://10.0.0.10:8123/',
       outerUrl: '',

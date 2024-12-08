@@ -13,7 +13,7 @@ body {
   -o-object-fit: cover;
   -o-object-position: center center;
 
-  @apply fixed object-cover object-center w-[110vw] h-[110vh] blur-[3px] brightness-90 z-[-1] top-[-5%] left-[-5%] overflow-hidden;
+  @apply fixed object-cover object-center w-[110vw] h-[110vh] blur-[3px] brightness-75 z-[-1] top-[-5%] left-[-5%] overflow-hidden;
 }
 
 #app {

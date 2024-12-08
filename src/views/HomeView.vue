@@ -7,14 +7,21 @@ const { menus } = useAppStore()
 
 <template>
   <main class="main">
-    <SideMenu></SideMenu>
-    <VisionPane :items="menus" />
+    <SideMenu class="left"></SideMenu>
+    <VisionPane class="right" :items="menus" />
   </main>
 </template>
 
 <style lang="css" scoped>
 .main {
-  height: max(66.6vh, var(--app-min-height));
-  @apply w-[90%] grid grid-cols-[10%_80%] blur-none z-10;
+  @apply w-[66rem] h-[30rem] grid grid-cols-[10%_80%] blur-none z-10;
+}
+
+.left {
+  @apply w-[6rem];
+}
+
+.right {
+  @apply w-[60rem];
 }
 </style>
